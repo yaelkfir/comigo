@@ -1,0 +1,21 @@
+
+@media (max-width: 700px) {
+    nav.top-menu{
+        display: none;
+    }
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333333;
+}
+
+h1{
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 60px;
+}
+
+h3{
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 30px;
+}
