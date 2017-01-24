@@ -19,3 +19,94 @@ h3{
     font-family: 'Fugaz One', sans-serif;
     font-size: 30px;
 }
+
+/*----- links ------*/
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: #151515;
+}
+
+a:visited{
+    color: #151515;
+}
+
+a:hover, a:focus{
+    color: #f14848;
+}
+
+a:active{
+    color: #f14848;
+}
+
+#index .index_link{
+    color: #f14848;
+    font-weight: 900;
+}
+
+/*----- links ------*/
+
+.sub-nav a:link{
+    color: #151515;
+    background-color: #ffffff;
+}
+
+.sub-nav a:visited{
+    color: #151515;
+    background-color: #ffffff;
+}
+
+.sub-nav a:hover, a .sab-nav:focus{
+    color: #ffffff;
+    background-color: #f14848;
+}
+
+.sub-nav a:active{
+    color: #ffffff;
+    background-color: #f14848;
+}
+
+/*----- red-btn-links ------*/
+
+
+.red-btn-link:link{
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #f14848;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 40px;
+}
+
+.red-btn-link:visited{
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #f14848;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 40px;
+}
+
+.red-btn-link:hover, a .sab-nav:focus {
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #f14848;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 40px;
+}
+
+.red-btn-link:active{
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #f14848;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 40px;
+}
