@@ -10,6 +10,10 @@ body{
     color: #333333;
 }
 
+h3,h5{
+    margin: 0;
+}
+
 h1{
     font-family: 'Fugaz One', sans-serif;
     font-size: 60px;
@@ -20,156 +24,195 @@ h3{
     font-size: 30px;
 }
 
-/*----- links ------*/
-
-a:link,
-a:visited{
-    color: #151515;
-    text-decoration: none;
+h5{
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 1em;
 }
 
-a:hover, a:focus, a:active{
-    color: #f14848;
-    text-decoration: none;
+body, main, section, ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 #index .index_link{
     color: #f14848;
     font-weight: 900;
 }
-body, main{
-    width: 100%;
-    margin: 0;
-
-}
 
 .h1-section {
-    background-image: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg");
-    background-repeat: repeat space, no-repeat;
-    background-position: 20% 30%, 50% top;
+    background: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg") no-repeat space, 20% 30%, 50% top;
     background-size: 100%;
     height: 600px;
 }
 
-/*----- links ------*/
-
-.red-back-links a:link{
-    color: #151515;
-    background-color: #ffffff;
-}
-
-.red-back-links a:hover, a .red-back-links:focus, .red-back-links a:active{
-    color: #ffffff;
-    background-color: #f14848;
-}
-
-.blog-list .red-back-links a{
-    color: #ffffff;
-    background-color: #f14848;
-}
-
-/*----- red-btn-links ------*/
-
-.red-btn-link:link,
-.red-btn-link:visited,
-.red-btn-link:hover, a .red-btn-link:hover,
-.red-btn-link:active{
-    font-weight: 300;
-    color: #ffffff;
-    background-color: #f14848;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 40px;
+.box-list li{
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    height: 500px;
+    background: url("../assets/other/ic_EI_cloud_2_home_page.png") no-repeat, url("../assets/other/home-tv-service-bg1.png")  20% 20%, center;
+    background-size:40%, cover;
 
 }
-/*----- img-list-links ------*/
+
+.box-list li:nth-of-type(2) {
+    background-image: url("../assets/other/ic-stb-screens.png"),url("../assets/other/home-tv-service-bg2.png");}
+.site-footer {background-color: #1e2024;}
 
 .img-list{
     background-color: #151515;
     color: white;
     font-weight: 300;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-position{
+    margin-left: 40%;
+    width: 60%;
+    height: 100%;
+}
+
+/*----- links ------*/
+
+a:link,
+a:visited{
+    font-weight: 300;
+    color: #151515;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active{
+    font-weight: 300;
+    color: #f14848;
+    text-decoration: none;
+}
+
+.ul .red-back-link a:link{
+    color: #151515;
+    background-color: #ffffff;
+}
+.red-back-link a:hover, a .red-back-link:focus, .red-back-link a:active{
+    color: #ffffff;
+    background-color: #f14848;
+}
+
+.red-btn-link:link,
+.red-btn-link:visited,
+.red-btn-link:hover, .red-btn-link a:focus,
+.red-btn-link{
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #f14848;
+    padding: 1em 2em 1em 2em;
+    border-radius: 40px;
+}
+
+.box-list li:nth-of-type(1) .red-btn-link{
+    color: #f14848;
+    background-color: #ffffff;
+}
+
+.blog-list span,
+.floating-boxes .red-back-link{
+    color: #ffffff;
+    background-color: #f14848;
+    width: 100%;
 }
 
 .img-list a:link, .img-list a:visited{
     color: #606060;
 }
 
-.img-list a:hover, .img-list a:focus, .img-list a:active {
-    color: #f14848;
-}
-/*---------- box-list--------- */
-
-.box-list ul{
-    width: 100%;
-}
-.box-list li:nth-of-type(1) {
-    width: 50%;
-    background-color: #f14848;
-}
-
-.box-list li:nth-of-type(2) {
-    width: 50%;
-    background-color: #ececec;
-}
-
-/*-------white-btn-link-------*/
-
-.white-btn-link:link,
-.white-btn-link:visited,
-.white-btn-link:hover,
-.white-btn-link:active{
-    font-weight: 300;
-    color: #f14848;
-    background-color: #ffffff;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 40px;
-}
-/*------ download-pdf-link-------*/
-
-.download-pdf-link a{
-    font-weight: 400;
-    color: #f14848;
-    background-color: #ffffff;
-    padding: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-aside > .gray-back-link a:hover{
-    font-weight: 300;
+.floating-boxes .gray-back-link{
     color: #151515;
     background-color: #ececec;
 }
-
-/* footer list */
-
-footer{
-    background-color: #1e2024;
-}
-
-.footer-nav a{
-    color: #ffffff;
-}
-
-/* --- sub-nav-footer----*/
-
-.footer-nav-sub a:link, .footer-nav-sub a:visited{
-    color: #7a7a7a;
-}
-
-.footer-nav-sub a:hover, .footer-nav-sub a:focus, .footer-nav-sub a:active {
-    color: #f14848;
-}
-
-/* --- sub-terms-footer----*/
-
+.footer-nav-sub a:link, .footer-nav-sub a:visited,
 .footer-nav-terms a:link, .footer-nav-terms a:visited{
     color: #7a7a7a;
 }
-
-.footer-nav-terms a:hover, .footer-nav a:focus, .footer-nav-terms a:active {
+.img-list a:hover, .img-list a:focus, .img-list a:active,
+.footer-nav-sub a:hover, .footer-nav-sub a:focus, .footer-nav-sub a:active{
+    color: #f14848;
+}
+.footer-nav a,
+.footer-nav-terms a:hover, .footer-nav a:focus, .footer-nav-terms a:active
+, a h5, a h3{
     color: #ffffff;
+}
+.blog-list li:nth-child(1) a{background-color: #f14848;}
+.blog-list li:nth-child(2) a{
+    background-position: right center;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)), url("../assets/blog/ibc_post_EI-750x508.png");
+}
+.blog-list li:nth-child(3) a{background:
+        linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+        background-position: center center;
+}
+.blog-list li:nth-child(4) a{background:
+        linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+        url("../assets/blog/IMG_9294-750x563.jpeg");
+        background-position: center center;
+}
+.blog-list li:nth-child(5) a{background:
+        linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+        url("../assets/blog/post_quality-750x508.jpeg");
+        background-position: center center;
+}
+
+.blog-list li:nth-child(6) a{background:
+        linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)),
+        url("../assets/blog/post_tv_connect-750x508.jpeg");
+background-position: center center;
+}
+
+.blog-list li{
+    width: 16.666666666667%;
+    height: 500px;
+    float: left;
+    list-style-type: none;
+ }
+
+.blog-list li a{
+    background-position: center, center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.blog-list li span{
+    display: none;
+}
+.blog-list li:hover span,
+.blog-list li:active span{
+    display: block;
+    text-align: center;
+    padding: 2em 0 2em 0;
+    font-size:0.8em;
+}
+
+.blog-li-content{
+    bottom: 0;
+    position: absolute;
+}
+
+.blog-list p{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 200;
 }
