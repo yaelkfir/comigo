@@ -41,7 +41,9 @@ body, main, section, ul{
 }
 
 .h1-section {
-    background: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg") no-repeat space, 20% 30%, 50% top;
+    background-image: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%, 50% top;
     background-size: 100%;
     height: 600px;
 }
@@ -49,9 +51,11 @@ body, main, section, ul{
 .box-list li{
     width: 50%;
     float: left;
+    background-image: url("../assets/other/ic_EI_cloud_2_home_page.png"),url("../assets/other/home-tv-service-bg1.png");
     list-style-type: none;
+    background-repeat: no-repeat;
     height: 500px;
-    background: url("../assets/other/ic_EI_cloud_2_home_page.png") no-repeat, url("../assets/other/home-tv-service-bg1.png")  20% 20%, center;
+    background-position: 20% 20%, center;
     background-size:40%, cover;
 
 }
@@ -145,31 +149,33 @@ a:hover, a:focus, a:active{
 }
 .blog-list li:nth-child(1) a{background-color: #f14848;}
 .blog-list li:nth-child(2) a{
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.3)),
+            url("../assets/blog/ibc_post_EI-750x508.png");
     background-position: right center;
-    background-image: linear-gradient(
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url("../assets/blog/ibc_post_EI-750x508.png");
-}
+  }
 .blog-list li:nth-child(3) a{background:
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.6)),
         url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
-        background-position: center center;
+    background-position: center center;
 }
 .blog-list li:nth-child(4) a{background:
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.6)),
         url("../assets/blog/IMG_9294-750x563.jpeg");
-        background-position: center center;
+    background-position: center center;
 }
 .blog-list li:nth-child(5) a{background:
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.6)),
         url("../assets/blog/post_quality-750x508.jpeg");
-        background-position: center center;
+    background-position: center center;
 }
 
 .blog-list li:nth-child(6) a{background:
@@ -216,3 +222,4 @@ background-position: center center;
     color: white;
     font-weight: 200;
 }
+
