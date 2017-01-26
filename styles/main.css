@@ -8,28 +8,50 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     color: #333333;
+    font-size:100%;
 }
 
 h3,h5{
     margin: 0;
 }
 
-h1{
-    font-family: 'Fugaz One', sans-serif;
-    font-size: 60px;
+h1,h3,h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+    line-height: 5rem;
+}
+h2{
+    font-size:2rem;
+    line-height:3rem;
 }
 
 h3{
-    font-family: 'Fugaz One', sans-serif;
-    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1e2024;
+    font-weight: 200;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.img-list h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.3rem;
+    color: white;
+    font-weight: 200;
+    line-height: 3rem;
 }
 
 h5{
-    font-size: 1.2em;
-    font-weight: 300;
-    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 1rem;
 }
-
+p{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
 body, main, section, ul{
     width: 100%;
     margin: 0;
@@ -39,6 +61,22 @@ body, main, section, ul{
     color: #f14848;
     font-weight: 900;
 }
+
+/*---- menu -----*/
+
+nav{
+float: right;
+}
+
+.top-menu .top-menu ul, .top-menu li{
+    display: inline-block;
+}
+
+.top-menu .red-back-link{
+    display: none;
+}
+
+
 
 .h1-section {
     background-image: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg");
@@ -83,6 +121,7 @@ body, main, section, ul{
 
 a:link,
 a:visited{
+    font-size:1rem;
     font-weight: 300;
     color: #151515;
     text-decoration: none;
@@ -107,10 +146,12 @@ a:hover, a:focus, a:active{
 .red-btn-link:visited,
 .red-btn-link:hover, .red-btn-link a:focus,
 .red-btn-link{
-    font-weight: 300;
+    font-weight: 200;
+    font-variant: small-caps;
     color: #ffffff;
     background-color: #f14848;
-    padding: 1em 2em 1em 2em;
+    font-size: 0.8rem;
+    padding: 1rem 2rem 1rem 2rem;
     border-radius: 40px;
 }
 
@@ -208,8 +249,8 @@ background-position: center center;
 .blog-list li:active span{
     display: block;
     text-align: center;
-    padding: 2em 0 2em 0;
-    font-size:0.8em;
+    padding: 2rem 0 2rem 0;
+    font-size:0.8rem;
 }
 
 .blog-li-content{
@@ -218,7 +259,7 @@ background-position: center center;
 }
 
 .blog-list p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: white;
     font-weight: 200;
 }
