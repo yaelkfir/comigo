@@ -290,11 +290,9 @@ a:hover, a:focus, a:active{
 }
 
 .blog-list li:nth-child(6) a{background:
-        linear-gradient(
-                rgba(0, 0, 0, 0.6),
-                rgba(0, 0, 0, 0.6)),
         url("../assets/blog/post_tv_connect-750x508.jpeg");
 background-position: center center;
+    opacity: 0.5;
 }
 
 .blog-list li{
@@ -326,6 +324,8 @@ background-position: center center;
 .blog-list{
     height: 500px;
     display: block;
+    background-color: #1e2024;
+
 }
 
 .blog-li-content{
