@@ -58,7 +58,7 @@ p{
 .p-margin{
     margin: 1em 0 1em 0;
 }
-body, main, section, ul{
+section, ul{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -74,7 +74,7 @@ header{
     padding: 18px 30px;
     background-color: white;
     position: fixed;
-    width: 96%;
+    width: 100%;
     top: 0;
     z-index: 1;
 }
