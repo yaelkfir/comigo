@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Comigo OTT/STB solutions</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Bungee+Shade|Source+Sans+Pro:200,300,400,700,900" rel="stylesheet">
 </head>
@@ -55,7 +56,7 @@
     <section class="why-comigo">
         <div class="why-comigo-div">
             <h3>WHY COMIGO?</h3>
-            <p>
+            <p class="p-margin">
                 Comigo redefines the TV experience,
                 infusing it with the full power of the Internet.
             </p>
@@ -72,7 +73,9 @@
         </div>
         <ul class="footer-nav-sub">
             <li>
-                <a href="#">PEDIA</a>
+                <label for="PEDIA">
+                    <input type="radio" value="PEDIA" name="PEDIA" id="PEDIA"> PEDIA
+                </label>
                 <figure>
                     <img src="assets/img/sport-pedia.png" alt="sport" class="picture">
                     <figcaption>Create new revenue engines through
@@ -136,19 +139,23 @@
                 <a href="#" class="red-btn-link">ENHANCE YOUR OTT TV</a>
             </div>
         </li>
-        <li class="box-list-content">
-            <h3 class="h3-small">DEPLOY BEST IN CLASS TV SERVICE</h3>
-            <p>Comigo's Android-based STB (HW&MW)</p>
-            <a href="#" class="red-btn-link">DEPLOY ON ANDROID</a>
+        <li>
+            <div class="box-list-content">
+                <h3 class="h3-small">DEPLOY BEST IN CLASS TV SERVICE</h3>
+                <p>Comigo's Android-based STB (HW&MW)</p>
+                <a href="#" class="red-btn-link">DEPLOY ON ANDROID</a>
+            </div>
         </li>
     </ul>
     <!-- YOUR CONTENT-->
-    <section>
-        <h3>YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE</h3>
-        <p>
-            Intelligence-based contextual WatchApp™ Applications.
-        </p>
-        <a href="#" class="red-btn-link">LEARN MORE</a>
+    <section class="your-content">
+        <div class="img-list-static-content">
+            <h3 class="h3-left">YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE</h3>
+            <p class="p-margin">
+                Intelligence-based contextual WatchApp™ Applications.
+            </p>
+            <a href="#" class="red-btn-link">LEARN MORE</a>
+        </div>
         <img src="assets/img/screen_whos_on.jpg" alt="comigo screen" class="side-position">
     </section>
     <!-- learn mor about comigo -->

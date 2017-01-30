@@ -39,12 +39,8 @@ h3{
     line-height: 3.8rem;
 }
 
-.img-list h3{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.3rem;
-    color: white;
-    font-weight: 200;
-    line-height: 3rem;
+.h3-left{
+   text-align: left;
 }
 
 h5{
@@ -52,9 +48,15 @@ h5{
     font-weight: 200;
     padding: 1rem;
 }
+
 p{
-    font-size: 1.2rem;
-    font-weight: 200
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+.p-margin{
+    margin: 1em 0 1em 0;
 }
 body, main, section, ul{
     width: 100%;
@@ -71,11 +73,16 @@ body, main, section, ul{
 header{
     padding: 18px 30px;
     background-color: white;
+    position: fixed;
+    width: 96%;
+    top: 0;
+    z-index: 1;
 }
 
 nav{
     float: right;
     line-height: 1.625rem;
+    margin-right: 4rem;
 }
 
 .top-menu .top-menu ul, .top-menu li{
@@ -113,7 +120,7 @@ nav{
 }
 
 .box-list li:nth-of-type(2) {
-    background-image: url("../assets/other/ic-stb-screens.png"),url("../assets/other/home-tv-service-bg2.png");
+    background-image:url("../assets/other/home-tv-service-bg2.png");
 }
 
 .box-list li:nth-of-type(1) p, .box-list li:nth-of-type(1) .h3-small {
@@ -121,14 +128,30 @@ color: white}
 
 .site-footer {background-color: #1e2024;}
 
-.box-list-content:nth-child(1){
-    background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
+.box-list li:nth-of-type(1) .box-list-content{
+    background-image: url("../assets/other/ic_EI_cloud_2_home_page.png");
     background-repeat: no-repeat;
-    background-size: 47%;
+    background-size: 50%;
     background-position: 12rem 2rem;
     padding-left: 12rem;
-    padding-top: 20rem;
+    padding-top: 22.5rem;
     padding-right: 13rem;
+    position: relative;
+}
+
+.box-list li:nth-of-type(2) .box-list-content{
+    background-image: url("../assets/other/ic-stb-screens.png");
+    background-size: 42%;
+    background-position: 3rem 2rem;
+    background-repeat: no-repeat;
+    padding-left: 3.5rem;
+    padding-top: 22.5rem;
+    padding-right: 13rem;
+    position: relative;
+}
+
+.box-list li:nth-of-type(2) .box-list-content h3{
+    color: #1e2024;
 }
 
 .img-list{
@@ -141,9 +164,10 @@ color: white}
 }
 
 .side-position{
-    margin-left: 40%;
     width: 60%;
-    height: 100%;
+    height: 80%;
+    float: right;
+    padding-top: 2rem;
 }
 
 /*----- links ------*/
@@ -197,17 +221,13 @@ a:hover, a:focus, a:active{
     padding-top: 6rem;
 }
 
-.why-comigo-div p{
-    line-height: 1.8rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
 .box-list li:nth-of-type(1) .red-btn-link{
     color: #f14848;
     background-color: #ffffff;
 }
-
+.your-content .img-list-static-content{
+    padding-top: 6rem;
+}
 .blog-list span,
 .floating-boxes .red-back-link{
     color: #ffffff;
@@ -218,7 +238,9 @@ a:hover, a:focus, a:active{
 .img-list a:link, .img-list a:visited{
     color: #606060;
 }
+.floating-boxes{
 
+}
 .floating-boxes .gray-back-link{
     color: #151515;
     background-color: #ececec;
@@ -304,7 +326,6 @@ background-position: center center;
 .blog-list{
     height: 500px;
     display: block;
-    position: inherit;
 }
 
 .blog-li-content{
@@ -334,6 +355,7 @@ background-position: center center;
     text-align:left;
     line-height: 3rem;
     font-size: 2.3rem;
+    color: white;
 }
 
 .img-list-static-content h3 span{
