@@ -1,8 +1,8 @@
-
-@media (max-width: 700px) {
-    nav.top-menu{
-        display: none;
-    }
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body{
@@ -17,15 +17,15 @@ h3,h5,h2,h1{
 
 h1,h3,h2{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3.8rem;
+    font-size: 4.8vw;
     color: white;
     font-weight: 400;
-    line-height: 5rem;
+    line-height: 6.2vw;
     text-align: center;
 }
 h2{
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.5vw;
+    line-height: 2vw;
     margin-bottom: 0;
     font-weight: 200;
 }
@@ -69,45 +69,53 @@ section, ul{
 }
 
 /*---- menu -----*/
+header .logo{
+    padding-top: 1.1rem;
+}
 
 header{
-    padding: 18px 30px;
     background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.08);
+    height: 66px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 nav{
     float: right;
     line-height: 1.625rem;
-    margin-right: 4rem;
 }
 
 .top-menu .top-menu ul, .top-menu li{
     display: inline-block;
     margin-left: 2rem;
+    line-height: 66px;
 }
 
 .top-menu .red-back-link{
-    display: none;
-}
+    display: none;}
 
 
 .h1-section {
     background-image: url("../assets/other/home-featured-circle.png"), url("../assets/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%, 50% top;
-    background-size:cover;
-    height: 500px;
+    background-size: cover;
+    height: 38vw;
     width: 100%;
     display: flex;
-    justify-content: center;
     text-align: center;
-    margin: auto;
     align-items: center;
+    margin-top: 65px;
+}
 
+.box-list{
+    height: 600px;
+    display: block;
 }
 
 .box-list li{
@@ -117,6 +125,7 @@ nav{
     height: 600px;
     background: url("../assets/other/home-tv-service-bg1.png") no-repeat center;
     background-size:cover;
+    display: block;
 }
 
 .box-list li:nth-of-type(2) {
@@ -129,24 +138,27 @@ color: white}
 .site-footer {background-color: #1e2024;}
 
 .box-list li:nth-of-type(1) .box-list-content{
-    background-image: url("../assets/other/ic_EI_cloud_2_home_page.png");
+    background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 12rem 2rem;
+    background-size: 69%;
+    background-position: 11rem 3rem;
     padding-left: 12rem;
     padding-top: 22.5rem;
-    padding-right: 13rem;
+    /* padding-right: 2rem; */
+    width: 80%;
     position: relative;
+    display: block;
 }
 
 .box-list li:nth-of-type(2) .box-list-content{
-    background-image: url("../assets/other/ic-stb-screens.png");
-    background-size: 42%;
+    background-image: url(../assets/other/ic-stb-screens.png);
+    background-size: 62%;
     background-position: 3rem 2rem;
     background-repeat: no-repeat;
     padding-left: 3.5rem;
     padding-top: 22.5rem;
-    padding-right: 13rem;
+    /* padding-right: 13rem; */
+    width: 80%;
     position: relative;
 }
 
@@ -165,16 +177,17 @@ color: white}
 
 .side-position{
     width: 60%;
-    height: 80%;
+    height: 100%;
     float: right;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /*----- links ------*/
 
 a:link,
 a:visited{
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: 300;
     color: #151515;
     text-decoration: none;
@@ -184,6 +197,14 @@ a:hover, a:focus, a:active{
     font-weight: 300;
     color: #f14848;
     text-decoration: none;
+}
+header .top-menu .nav-link:link,
+header .top-menu .nav-link:visited,
+header .top-menu .nav-link:hover,.nav-link a:focus
+header .top-menu .nav-link:active {
+    line-height: 66px;
+    height: 66px;
+    display: inline-block;
 }
 
 .ul .red-back-link a:link{
@@ -203,19 +224,19 @@ a:hover, a:focus, a:active{
     font-variant: small-caps;
     color: #ffffff;
     background-color: #f14848;
-    font-size: 0.8rem;
-    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    font-size: 1vw;
+    padding: 1.2vw 2.2vw 1.2vw 2.2vw;
     border-radius: 40px;
     text-align: center;
-    margin: 1rem auto;
-    line-height: 1rem;
+    margin: 1vw auto;
     letter-spacing: 0.1em;
     display: inline-block;
+
 }
 
 .why-comigo-div{
     width: 350px;
-    height: 300px;
+    height: 380px;
     text-align: center;
     margin: auto;
     padding-top: 6rem;
@@ -225,8 +246,10 @@ a:hover, a:focus, a:active{
     color: #f14848;
     background-color: #ffffff;
 }
-.your-content .img-list-static-content{
-    padding-top: 6rem;
+
+.your-content {
+    height: 600px;
+
 }
 .blog-list span,
 .floating-boxes .red-back-link{
@@ -235,16 +258,27 @@ a:hover, a:focus, a:active{
     width: 100%;
 }
 
+.floating-boxes{
+    background-color: #f9f9f9;
+    height: 540px;
+}
+
+.floating-boxes h3{
+    width: 40%;
+    height: 156px;
+    display: inline-block;
+    float: left;
+    color: #1e2024;
+}
 .img-list a:link, .img-list a:visited{
     color: #606060;
 }
-.floating-boxes{
 
-}
 .floating-boxes .gray-back-link{
     color: #151515;
-    background-color: #ececec;
+    height: 555px;
 }
+
 .footer-nav-sub a:link, .footer-nav-sub a:visited,
 .footer-nav-terms-in a:link, .footer-nav-terms-in a:visited{
     color: #7a7a7a;
@@ -300,6 +334,7 @@ background-position: center center;
     height: 500px;
     float: left;
     list-style-type: none;
+    box-sizing: border-box;
  }
 
 .blog-list li a{
@@ -345,7 +380,7 @@ background-position: center center;
 }
 
 .img-list-static-content{
-    width: 230px;
+    width: 520px;
     text-align: left;
     padding: 4rem 4rem 4rem 12rem;
     display: inline-block;
@@ -361,27 +396,50 @@ background-position: center center;
 .img-list-static-content h3 span{
     display: block;
 }
+.red-box{
+    width: 20%;
+    height: 250px;
+    display: inline-block;
+    background-color: #f14848;
+    float: left;
+}
 
-.site-footer {
-    background-color: #1e2024;
-    padding-top: 3rem;
+.schedule-box{
+    width: 40%;
+    background-color: #efefef;
+    height: 540px;
+    float: right;
+    left: 0;
+    top: 0;
+    padding: 20px 0 0 40px;
+}
+
+.schedule-box img{
+    width: 100%;
+    background-color: #efefef;
+    float: right;
+}
+.floating-boxes .site-footer {
+background-color: #1e2024;
+padding-top: 3rem;
 }
 
 .footer-nav{
-    width: 610px;
-    margin-left: 12rem;
+width: 610px;
+margin-left: 12rem;
 }
 
 .footer-nav li{
-    display: inline-table;
-    width: 200px;
-    padding-bottom: 2rem;
+display: inline-table;
+width: 200px;
+padding-bottom: 2rem;
 }
 
 .footer-nav-sub li{
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 0;
+display: inline-block;
+padding-bottom: 0;
+padding-top: 1rem;
+width: 100%;
 }
 
 .footer-nav-terms{
@@ -390,14 +448,25 @@ background-color: #151515;
 
 
 .footer-nav-terms-in, .footer-nav-terms-in li{
-    display: inline;
-    margin: auto;
+display: inline-block;
+padding-bottom: 2rem;
+width: 100%;
 }
 
-@media(max-width:1000px){
-    .footer-nav, .footer-nav-terms-in{
-        max-width: 300px;
-        width:20%;
-        margin: auto;
-    }
+.img-list .footer-nav-sub{
+display: inline-block;
+width: 150px;
+padding-top: 4rem;
+float: left;
+}
+
+.img-list-imgs, .img-list-imgs li, .img-list-imgs li figure {
+display: inline-block;
+width: 200px;
+}
+
+@media (max-width: 700px) {
+.top-menu{
+    display: none;
+}
 }
