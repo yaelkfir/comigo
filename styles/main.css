@@ -72,6 +72,8 @@ section, ul{
 #index .index_link{
     color: #f14848;
     font-weight: 900;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 sup{
@@ -79,6 +81,9 @@ sup{
     font-weight: 400;
 }
 
+li, ul{
+    list-style-type: none;
+}
 /*---- menu -----*/
 .site-header .a-logo{line-height: 66px;}
 
@@ -101,12 +106,14 @@ nav{
 }
 
 .top-menu .top-menu ul, .top-menu li{
-    display: inline-block;
     line-height: 66px;
 }
-
 .top-menu > ul > li{
     margin: 0;
+    float:left
+}
+
+.nav-link>a{
     padding-left: 1rem;
     padding-right: 1rem;
 }
