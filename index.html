@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Bungee+Shade|Source+Sans+Pro:200,300,400,700,900" rel="stylesheet">
 </head>
 <body id ="index">
-<header class="site-header">
+<header class="site-header clearfix">
     <a href="#" class="a-logo"><img src="assets/img/comigo-logo.png" alt="comigo logo" class="logo"></a>
-    <nav class="top-menu">
+    <nav class="top-menu clearfix">
         <ul>
             <li><a href="#" class="index_link">Home</a></li>
             <li class="nav-link"><a href="#">Our Solutions</a>
-                <ul class="red-back-link">
+                <ul class="red-back-link clearfix">
                     <li><a href="#"><div>EI CLOUD</div></a>
                         <ul>
                             <li><a href="#"><div>ei<sup>x</sup></div></a></li>
@@ -70,63 +70,61 @@
         </div>
     </section>
     <!-- ENGAGE VIEWERS what about video background? -->
-    <section class="img-list">
+    <section class="img-list clearfix">
         <div class="img-list-static-content">
             <h3 class="h3-small">
                 ENGAGE VIEWERS, DIFFERENTIATE EXPERIENCE <span>AND</span> DRIVE NEW REVENUE
             </h3>
             <p>with highly-relevant contextual services</p>
         </div>
-        <ul class="footer-nav-sub">
-            <li><a href="#">PEDIA</a></li>
-            <li><a href="#">PARTICIPATION</a></li>
-            <li><a href="#">DISCOVERY</a></li>
-            <li><a href="#">COMMERCE</a></li>
-            <li><a href="#">ADVERTISING</a></li>
-            <li><a href="#">CUSTOMIZE</a></li>
-        </ul>
-        <ul class="img-list-imgs">
-            <li>
-                <figure>
+        <ul class="footer-nav-sub clearfix">
+            <li class="clearfix">
+                <a href="#">PEDIA</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/sport-pedia.png" alt="sport" class="picture">
                     <figcaption>Create new revenue engines through
                         contextual shopping services
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
+            <li class="clearfix">
+                <a href="#">PARTICIPATION</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/participation.png" alt="participation" class="picture">
                     <figcaption>Engage viewers and increase content spread through data-driven social features
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
+            <li class="clearfix">
+                <a href="#">DISCOVERY</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/discovery.png" alt="discovery" class="picture">
                     <figcaption>
                         Offer personalised content with contextualised search, menu and recommendations
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
+            <li class="clearfix">
+                <a href="#">COMMERCE</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/commerce.png" alt="commerce" class="picture">
                     <figcaption>
                         Create new revenue engines through contextual shopping services
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
+            <li class="clearfix">
+                <a href="#">ADVERTISING</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/img-watchapp-car.png" alt="watchapp" class="picture">
                     <figcaption>
                         Offer ultra-targeted measurable advertising with advanced campaign analytics
                     </figcaption>
                 </figure>
             </li>
-            <li>
-                <figure>
+            <li class="clearfix">
+                <a href="#">CUSTOMIZE</a>
+                <figure class="img-list-imgs">
                     <img src="assets/img/customize.png" alt="customize" class="picture">
                     <figcaption>
                         Quickly launch new, unique services
@@ -135,9 +133,12 @@
                 </figure>
             </li>
         </ul>
+        <video autoplay="autoplay" loop="loop" id="bgvid">
+            <source src="assets/videos/video-soccer_2.mp4" type="video/mp4" />
+        </video>
     </section>
     <!-- ENHANCE ... ul-->
-    <ul class="box-list">
+    <ul class="box-list clearfix">
         <li>
             <div class="box-list-content">
                 <h3 class="h3-small">ENHANCE ANY TV SERVICE</h3>
@@ -154,7 +155,7 @@
         </li>
     </ul>
     <!-- YOUR CONTENT-->
-    <section class="your-content">
+    <section class="your-content clearfix">
         <div class="img-list-static-content">
             <h3 class="h3-left">YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE</h3>
             <p class="p-margin">
@@ -165,10 +166,22 @@
         <img src="assets/img/screen_whos_on.jpg" alt="comigo screen" class="side-position">
     </section>
     <!-- learn mor about comigo -->
-    <section  class="floating-boxes">
-        <h3 class="h3-left">LEARN MORE ABOUT COMIGO</h3>
-        <div class="red-box">
-            <a href="An-Introduction-to-Comigo-2016.pdf" target="_blank" class="red-back-link">Download our brochure to learn more</a>
+    <section  class="floating-boxes clearfix">
+        <div class="float-boxes-left clearfix">
+            <div class="light-gray"><h3 class="h3-left">LEARN MORE ABOUT COMIGO</h3></div>
+            <a href="An-Introduction-to-Comigo-2016.pdf" target="_blank" class="red-box">
+                    <p>Download our brochure to learn more</p>
+            </a>
+            <ul class="gray-box">
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+            </ul>
+            <a href="#" class="dark-gray-box">
+                <p>schedule a meeting at IBC 2016</p>
+                <img src="assets/img/img-event-IBC.jpg" alt="ibc event image">
+            </a>
         </div>
         <div class="schedule-box">
             <a href="#" class="gray-back-link">
@@ -176,22 +189,10 @@
                 <img src="assets/img/screen_demo.jpg" alt="screen_demo">
             </a>
         </div>
-
-        <ul class="red-box">
-            <li><a href="#"><span></span></a></li>
-            <li><a href="#"><span></span></a></li>
-            <li><a href="#"><span></span></a></li>
-            <li><a href="#"><span></span></a></li>
-        </ul>
-        <div class="dark-gray-box">
-            <a href="#" class="gray-back-link">SCHEDULE A MEETING AT
-                IBC 2016Schedule a meeting at <br/>IBC 2016
-                <img src="assets/img/img-event-IBC.jpg" alt="ibc event image"></a>
-        </div>
     </section>
     <!-- our blog -->
     <aside>
-        <ul class="blog-list">
+        <ul class="blog-list clearfix">
             <li>
                 <a href="#">
                     <div class="blog-li-content">
@@ -256,43 +257,48 @@
 </main>
 <footer>
     <div class="site-footer">
-        <ul class="footer-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PARTNERS</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li>
-                <a href="#">OUR SOLUTIONS</a>
-                <ul class="footer-nav-sub">
-                    <li><a href="#">EI CLOUD</a></li>
-                    <li><a href="#">EI MIDDLEWARE</a></li>
-                    <li><a href="#">ANDROID STB</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">INDUSTRY INSIGHTS</a>
-                <ul class="footer-nav-sub">
-                    <li><a href="#">MEDIA ROOM</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">INDUSTRY EVENTS</a></li>
-                </ul>
-            </li>
-            <li><a href="#">CONTACT US</a></li>
+        <ul class="footer-nav clearfix">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OUR SOLUTIONS</a>
+                    <ul class="footer-nav-sub">
+                        <li><a href="#">EI CLOUD</a></li>
+                        <li><a href="#">EI MIDDLEWARE</a></li>
+                        <li><a href="#">ANDROID STB</a></li>
+                    </ul>
+            </ul>
+            <ul>
+                </li>
+                <li><a href="#">PARTNERS</a></li>
+                <li><a href="#">INDUSTRY INSIGHTS</a>
+                    <ul class="footer-nav-sub">
+                        <li><a href="#">MEDIA ROOM</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">INDUSTRY EVENTS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
         </ul>
+        <a href="#"><img src="assets/logo/comigo-logo-white.png" alt=""></a>
     </div>
 
-<div class="footer-nav-terms">
-    <ul class="footer-nav-terms-in">
+<div class="footer-nav-terms clearfix">
+    <ul class="footer-nav-terms-in clearfix">
         <li>All rights reserved Comigo 2016</li>
         <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li class="lines"><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy </a></li>
     </ul>
-    <ul class="footer-nav-terms-in">
-        <li>Developed by:<a href="#">FATLADY</a></li>
+    <ul class="footer-nav-terms-in clearfix">
         <li><a href="#">twitter</a></li>
         <li><a href="#">facebook</a></li>
         <li><a href="#">google</a></li>
         <li><a href="#">reddit</a></li>
+        <li>Developed by:<a href="#">FATLADY</a></li>
     </ul>
 </div>
 </footer>
