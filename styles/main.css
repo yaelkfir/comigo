@@ -528,6 +528,7 @@ red-back-link{
     color: #ffffff;
 }
 .blog-list li:nth-child(1) a{background-color: #f14848;}
+
 .blog-list li:nth-child(2) a{
     background:
             linear-gradient(
@@ -536,7 +537,12 @@ red-back-link{
             url("../assets/blog/ibc_post_EI-750x508.png");
     background-position: right center;
     background-size:cover ;
-
+}
+.blog-list li:nth-child(2):hover a{
+    background:
+            url("../assets/blog/ibc_post_EI-750x508.png");
+    background-position: right center;
+    background-size:cover ;
 }
 .blog-list li:nth-child(3) a{background:
         linear-gradient(
@@ -546,10 +552,20 @@ red-back-link{
     background-position: center center;
     background-size:cover;
 }
+.blog-list li:nth-child(3):hover a{background:
+        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+    background-position: center center;
+    background-size:cover;
+}
 .blog-list li:nth-child(4) a{background:
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.8)),
+        url("../assets/blog/IMG_9294-750x563.jpeg");
+    background-position: center center;
+    background-size:cover;
+}
+.blog-list li:nth-child(4):hover a{background:
         url("../assets/blog/IMG_9294-750x563.jpeg");
     background-position: center center;
     background-size:cover;
@@ -563,6 +579,12 @@ red-back-link{
     background-size:cover;
 }
 
+.blog-list li:nth-child(5):hover a{background:
+        url("../assets/blog/post_quality-750x508.jpeg");
+    background-position: center center;
+    background-size:cover;
+}
+
 .blog-list li:nth-child(6) a{background:
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
@@ -571,7 +593,11 @@ red-back-link{
     background-position: center center;
     background-size:cover;
 }
-
+.blog-list li:nth-child(6):hover a{background:
+        url("../assets/blog/post_tv_connect-750x508.jpeg");
+    background-position: center center;
+    background-size:cover;
+}
 .blog-list li{
     width: 16.666666666667%;
     height: 100%;
@@ -604,12 +630,18 @@ red-back-link{
     z-index: 10;
 }
 
-.blog-list li:hover > a,
-.blog-list li:active > a{
+.blog-list li:nth-of-type(1n+2):hover > a,
+.blog-list li:nth-of-type(1n+2):active > a{
     width: 105%;
     height: 105%;
     position: absolute;
     top: -2.5%;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+}
+
+.blog-list li:hover > a  h5,
+.blog-list li:active > a  h5 {
+    background: linear-gradient( rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.98));
 }
 
 aside{
