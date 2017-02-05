@@ -308,12 +308,12 @@ nav{
 
 .img-list video{
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 160%;
+    min-width: 170%;
     top: -150px;
-    left: 0;
+    left: -910px;
     bottom: 0;
-    right: 0;
+    right: 0px;
     z-index: -100;
 }
 
@@ -337,7 +337,7 @@ nav{
 }
 
 .img-list .footer-nav-sub{
-    width: 60%;
+    width: 10%;
     font-size: 1.3rem;
     padding-top: 3rem;
     padding-left: 1rem;
@@ -366,14 +366,16 @@ nav{
     top: 5rem;
 }
 
-.img-list .footer-nav-sub li > figure{
+.img-list .footer-nav-sub li> figure{
     display: none;
 }
 
 .img-list .footer-nav-sub li:hover > figure{
     display: block;
 }
-
+.img-list .footer-nav-sub li:hover  .li-place-holder{
+    display: none;
+}
 figcaption {
     font-size: 1rem;
     font-weight: 200;
@@ -413,7 +415,7 @@ figcaption {
     left: 0px;
 }
 
-    /*-- end od img-list --*/
+/*-- end od img-list --*/
 
 .side-position{
     float: right;
@@ -649,8 +651,8 @@ aside{
 }
 
 .footer-nav > ul > li:first-child{
-     padding-bottom:2rem ;
- }
+    padding-bottom:2rem ;
+}
 
 .footer-nav > ul > li{
     text-align: left ;
@@ -782,7 +784,7 @@ a.red-box{
     background-color: #e8e8e8;
     width: 60%;
     height: 50%;
-  float: left;
+    float: left;
     position: relative;
 
 }
@@ -831,4 +833,3 @@ a.red-box{
 .clearfix:after {
     clear: both;
 }
-
