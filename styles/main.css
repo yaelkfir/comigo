@@ -15,6 +15,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size:100%;
     padding-top: 66px;
+    overflow-x: hidden;
 }
 /*---- h's----*/
 h3,h5,h2,h1{
@@ -373,9 +374,6 @@ nav{
 .img-list .footer-nav-sub li:hover > figure{
     display: block;
 }
-.img-list .footer-nav-sub li:hover  .li-place-holder{
-    display: none;
-}
 figcaption {
     font-size: 1rem;
     font-weight: 200;
@@ -548,12 +546,12 @@ red-back-link{
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.8)),
-        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+        url("../assets/blog/IMG_9294-750x563.jpeg");
     background-position: center center;
     background-size:cover;
 }
 .blog-list li:nth-child(3):hover a{background:
-        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+        url("../assets/blog/IMG_9294-750x563.jpeg");
     background-position: center center;
     background-size:cover;
 }
@@ -561,12 +559,12 @@ red-back-link{
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.8)),
-        url("../assets/blog/IMG_9294-750x563.jpeg");
+        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
     background-position: center center;
     background-size:cover;
 }
 .blog-list li:nth-child(4):hover a{background:
-        url("../assets/blog/IMG_9294-750x563.jpeg");
+        url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
     background-position: center center;
     background-size:cover;
 }
@@ -574,13 +572,13 @@ red-back-link{
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.8)),
-        url("../assets/blog/post_quality-750x508.jpeg");
+        url("../assets/blog/post_tv_connect-750x508.jpeg");
     background-position: center center;
     background-size:cover;
 }
 
 .blog-list li:nth-child(5):hover a{background:
-        url("../assets/blog/post_quality-750x508.jpeg");
+        url("../assets/blog/post_tv_connect-750x508.jpeg");
     background-position: center center;
     background-size:cover;
 }
@@ -589,12 +587,12 @@ red-back-link{
         linear-gradient(
                 rgba(0, 0, 0, 0.6),
                 rgba(0, 0, 0, 0.8)),
-        url("../assets/blog/post_tv_connect-750x508.jpeg");
+        url("../assets/blog/post_quality-750x508.jpeg");
     background-position: center center;
     background-size:cover;
 }
 .blog-list li:nth-child(6):hover a{background:
-        url("../assets/blog/post_tv_connect-750x508.jpeg");
+        url("../assets/blog/post_quality-750x508.jpeg");
     background-position: center center;
     background-size:cover;
 }
@@ -635,6 +633,16 @@ red-back-link{
     width: 105%;
     height: 105%;
     position: absolute;
+    left:0;
+    top: -2.5%;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+}
+.blog-list li:last-of-type:hover > a,
+.blog-list li:last-of-type:active > a{
+    width: 105%;
+    height: 105%;
+    position: absolute;
+    right: 0;
     top: -2.5%;
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
 }
