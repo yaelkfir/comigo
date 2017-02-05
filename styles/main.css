@@ -96,7 +96,7 @@ li, ul{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1;
+    z-index: 15;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.08);
     padding-left: 30px;
     padding-right: 30px;
@@ -599,6 +599,19 @@ red-back-link{
     font-size:0.8rem;
 }
 
+.blog-list li:hover,
+.blog-list li:active{
+    z-index: 10;
+}
+
+.blog-list li:hover > a,
+.blog-list li:active > a{
+    width: 105%;
+    height: 105%;
+    position: absolute;
+    top: -2.5%;
+}
+
 aside{
     position: relative;
     height: 36vw;
@@ -644,13 +657,13 @@ aside{
     margin-left: 12rem;
 }
 
-.footer-nav > ul{
+.footer-nav > li{
     float: left;
     width: 33.3333333%;
     padding-bottom: 2rem;
 }
 
-.footer-nav > ul > li:first-child{
+.footer-nav > li > ul > li:first-child{
     padding-bottom:2rem ;
 }
 
