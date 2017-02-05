@@ -637,15 +637,6 @@ red-back-link{
     top: -2.5%;
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
 }
-.blog-list li:last-of-type:hover > a,
-.blog-list li:last-of-type:active > a{
-    width: 105%;
-    height: 105%;
-    position: absolute;
-    right: 0;
-    top: -2.5%;
-    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
-}
 
 .blog-list li:hover > a  h5,
 .blog-list li:active > a  h5 {
