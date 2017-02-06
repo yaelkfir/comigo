@@ -133,23 +133,6 @@ nav{
     display: inline-block;
     left: 0;
     top:100%;
-    animation-name:move-down ;
-    animation-iteration-count:1;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    z-index: -100;
-}
-
-@keyframes move-down {
-    0% {
-        transform: translate(0px,-10px);
-        opacity: 0.1;
-    }
-
-    100% {
-        transform: translate(0px,0px);
-        opacity: 1;
-    }
 }
 
 .top-menu ul .nav-link:hover > .red-back-link > li{
@@ -630,17 +613,16 @@ red-back-link{
     display: block;
     height: 100%;
     width: 100%;
+    transition: transform .2s ease-out;
+    overflow: hidden;
 }
 .blog-list li span{
-    display: none;
-}
-.blog-list li:hover span,
-.blog-list li:active span{
     display: block;
     text-align: center;
     padding: 2rem 0 2rem 0;
     font-size:0.8rem;
 }
+
 
 .blog-list li:hover,
 .blog-list li:active{
@@ -649,51 +631,18 @@ red-back-link{
 
 .blog-list li:nth-of-type(1n+2):hover > a,
 .blog-list li:nth-of-type(1n+2):active > a{
-    width: 105%;
-    height: 105%;
-    animation-name: resize;
-    animation-iteration-count:1;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
+    transform:scale(1.05);
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
-    top: -2.5%;
+    top: 0;
     position: absolute;
-    overflow: hidden;
 }
 
-@keyframes resize {
-    0% {
-        width: 100%;
-        height: 100%;
-        top:0;
-    }
-
-    100% {
-        width: 105%;
-        height: 105%;
-    }
-}
-
-.blog-list li:nth-of-type(1n+2):hover > a > .blog-li-content,
-.blog-list li:nth-of-type(1n+2):active > a > .blog-li-content{
-    animation-name: move-up;
-    animation-iteration-count:1;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-}
 
 .blog-list li:hover > a  h5,
 .blog-list li:active > a  h5 {
     background: linear-gradient( rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.98));
 }
-@keyframes move-up {
-    0% {
-    transform: translate(0px,85px)    }
 
-    100% {
-    transform: translate(0px,0px)
-    }
-}
 aside{
     position: relative;
     height: 36vw;
@@ -709,8 +658,19 @@ aside{
     width: 100%;
 }
 
-.blog-li-content{
+.blog-list li:nth-of-type(1) .blog-li-content{
+    position: absolute;
     bottom: 0;
+}
+
+.blog-list li:nth-of-type(1n+2) .blog-li-content{
+    bottom: -78px;
+    position: absolute;
+    transition: transform 0.4s ease-out;
+}
+
+.blog-list li:nth-of-type(1n+2):hover > a > .blog-li-content{
+    transform: translate(0px, -78px);
     position: absolute;
 }
 
