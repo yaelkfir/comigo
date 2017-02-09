@@ -796,7 +796,8 @@ a.red-box {
     top: -1000px;
     right: 0;
   }
-  .header-bar{
+
+  .header-bar {
     position: fixed;
   }
 
@@ -947,11 +948,13 @@ a.red-box {
   }
 }
 
-  /*-- end of header --*/
-
-
+/*-- end of header --*/
 
 @media (max-width: 700px) {
+
+  html {
+    font-size: 20px;
+  }
 
   #checkbox-menu + label {
     float: right;
@@ -1010,22 +1013,129 @@ a.red-box {
     margin-left: -20px;
   }
 
-  .site-header nav{
+  .site-header nav {
     display: none;
   }
-  #checkbox-menu[type=checkbox]:checked ~ nav{
+
+  #checkbox-menu[type=checkbox]:checked ~ nav {
     display: block;
   }
 
-  .h1-section{
-    height: 76vh;
+  .h1-section {
+    height: 70vw;
+    background-position-x: 50%;
+    padding: 8%;
   }
 
-  h2{
-    font-size: 2.6rem;
+  h2 {
+    font-size: 1.8rem;
   }
 
-  h1{
-    font-size: 3.6rem;
+  h1 {
+    line-height: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .red-btn-link:link {
+    height: 52px;
+  }
+
+  .why-comigo {
+    height: 50vw;
+    float: none;
+    display: block;
+  }
+
+  .why-comigo-div {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .img-list {
+    height: 200vw;
+  }
+
+  .img-list-static-content {
+    padding: 3rem 0 0 3rem;
+    width: 100%;
+  }
+
+  .img-list .footer-nav-sub {
+    float: none;
+    padding-left: 3rem;
+  }
+
+  .img-list .footer-nav-sub li {
+    width: 100%;
+  }
+
+  .img-list .footer-nav-sub li figure {
+    width: 60%;
+    position: absolute;
+    top: 35rem;
+    right: 7rem;
+  }
+
+  .img-list video {
+    position: absolute;
+    min-height: 40%;
+    min-width: 600%;
+    top: -730px;
+    left: -580px;
+    bottom: 0;
+    right: 0;
+    z-index: -100;
+  }
+
+  figcaption {
+    font-size: 1.3rem;
+    width: 120%;
+  }
+
+  .img-list ul li:nth-of-type(1) img {
+    width: 50vw;
+    left: 70px;
+  }
+
+  .box-list {
+    height: 175vw;
+  }
+
+  .box-list li {
+    width: 100%;
+    height: 50%;
+  }
+
+  .box-list li:nth-of-type(1) .box-list-content {
+    background-position: 3rem 2.5rem;
+    padding-left: 3rem;
+    padding-top: 16.5rem;
+  }
+  .box-list li:nth-of-type(1) .h3-small {
+    color: white;
+    width: 56%;
+  }
+  .box-list li:nth-of-type(2) .box-list-content {
+    background-size: 50%;
+    padding-left: 3.5rem;
+    padding-top: 16.7rem;
+    width: 80%;
+    position: relative;
+  }
+ .box-list li:nth-of-type(2){
+   width:160%;
+ }
+  .your-content{
+   position: relative;
+    height: 90vw;
+  }
+  .side-position{
+    float: none;
+    position: absolute;
+    left: 25%;
+    top:0;
   }
 }
