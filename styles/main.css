@@ -42,7 +42,7 @@ h3 {
   line-height: 3.8rem;
 }
 
-.h3-left {
+.headline-left-align {
   text-align: left;
 }
 
@@ -76,6 +76,8 @@ sup {
 li, ul {
   list-style-type: none;
 }
+
+
 
 [type="checkbox"] {
   border: 0;
@@ -137,7 +139,7 @@ li, ul {
 }
 
 .box-list li:nth-of-type(1) .box-list-content {
-  background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
+  background-image: url("../assets/other/ic_EI_cloud_2_home_page.png");
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 11rem 3rem;
@@ -149,7 +151,7 @@ li, ul {
 }
 
 .box-list li:nth-of-type(2) .box-list-content {
-  background-image: url(../assets/other/ic-stb-screens.png);
+  background-image: url("../assets/other/ic-stb-screens.png");
   background-size: 50%;
   background-position: 3rem 2rem;
   background-repeat: no-repeat;
@@ -235,12 +237,20 @@ li, ul {
   top: 5rem;
 }
 
-.img-list .footer-nav-sub li:nth-of-type(1n+2) > figure {
+.img-list .footer-nav-sub li:not(.blog-li-inisial-figure) figure {
   display: none;
+}
+
+.blog-li-inisial-figure{
+  display: block;
 }
 
 .img-list .footer-nav-sub li:hover > figure {
   display: block;
+}
+
+.img-list .footer-nav-sub li:hover ~ .blog-li-inisial-figure>figure{
+  display: none;
 }
 
 figcaption {
@@ -351,7 +361,7 @@ a:hover, a:focus, a:active {
   height: 29vw;
 }
 
-.why-comigo-div {
+.why-comigo-content {
   width: 25%;
   height: 100%;
   text-align: center;
@@ -552,7 +562,7 @@ aside {
   transform: translateY(0);
 }
 
-.blog-list li:nth-of-type(1n+2):hover > a > .blog-li-content {
+.blog-list li:nth-of-type(1n+2):hover  .blog-li-content {
   transform: translateY(-78px);
   position: absolute;
 }
@@ -723,8 +733,28 @@ a.red-box {
   width: 40%;
   height: 50%;
   float: left;
+  padding-left: 4.8vw;
+  padding-top: 4vw;
+}
+.gray-box li{
+  background-color: #f14848;
+  height: 6vw;
+  width: 6vw;
+  border-radius: 7vw;
+  padding: 1.7vw;
+  float: left;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  transition: transform, box-shedow 2s ease-out;
+}
+.gray-box li:hover{
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
 }
 
+.gray-box li a{
+  color:white;
+}
 .dark-gray-box {
   background-color: #e8e8e8;
   width: 60%;
@@ -837,7 +867,7 @@ a.red-box {
     float: right;
   }
 
-  .top-menu .top-menu ul, .top-menu li {
+  .top-menu, .top-menu ul, .top-menu li {
     line-height: 66px;
   }
 
@@ -1024,11 +1054,13 @@ a.red-box {
   .h1-section {
     height: 70vw;
     background-position-x: 50%;
-    padding: 8%;
+    padding: 8vw;
   }
 
-  h2 {
-    font-size: 1.8rem;
+  .h1-section  h2 {
+    font-size: 1.7rem;
+    width: 70vw;
+    margin: auto;
   }
 
   h1 {
@@ -1047,7 +1079,7 @@ a.red-box {
     display: block;
   }
 
-  .why-comigo-div {
+  .why-comigo-content {
     width: 60%;
     height: 100%;
     text-align: center;
@@ -1119,23 +1151,81 @@ a.red-box {
     width: 56%;
   }
   .box-list li:nth-of-type(2) .box-list-content {
-    background-size: 50%;
+    background-size: 40%;
     padding-left: 3.5rem;
     padding-top: 16.7rem;
     width: 80%;
     position: relative;
   }
  .box-list li:nth-of-type(2){
-   width:160%;
+   width:120%;
  }
   .your-content{
    position: relative;
-    height: 90vw;
+    height: 120vw;
   }
   .side-position{
     float: none;
     position: absolute;
-    left: 25%;
+    left: 17%;
     top:0;
+    width:70vw;
+  }
+
+  .your-content .img-list-static-content{
+    padding-top: 55vw;
+  }
+.floating-boxes{
+  height: 300vw;
+}
+  .float-boxes-left{
+    width:100%;
+    position: static;
+  }
+  .light-gray{
+    width: 100%;
+    height: 25vw;
+    top: 0;
+    left: 0
+  }
+  .dark-gray-box,
+  .gray-box,
+  a.red-box{
+    width: 100%;
+    height: 60vw;
+    float: none;
+    position: absolute;
+  }
+  a.red-box{
+    top: 25vw;
+    left: 0;
+    right: 0;
+  }
+
+  .gray-box{
+    top: 185vw;
+  }
+  .dark-gray-box{
+    bottom: 0;
+    left: 0;
+  }
+
+  .schedule-box{
+    width: 100%;
+    float: none;
+    position: absolute;
+    top: 85vw;
+    height: 100vw;
+  }
+
+  .schedule-box img{
+    width: 95%;
+  }
+
+  aside{
+    display: none;
+  }
+  footer{
+    display: none;
   }
 }
