@@ -1,0 +1,102 @@
+.box-list li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+  height: 100%;
+  background: url("../assets/other/home-tv-service-bg1.png") no-repeat center;
+  background-size: cover;
+  display: block;
+}
+
+.box-list li:nth-of-type(1) p,
+
+.box-list li:nth-of-type(1) .h3-small {
+  color: white
+}
+
+.box-list li:nth-of-type(1) .red-btn-link {
+  color: #f14848;
+  background-color: #ffffff;
+  min-width: 210px;
+}
+
+.box-list li:nth-of-type(1) .box-list-content {
+
+  background-image: url("../assets/other/ic_EI_cloud_2_home_page.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 15%;
+  padding: 25vw 12vw 4vw 12vw;
+  position: relative;
+  display: block;
+}
+
+.box-list li:nth-of-type(2) {
+  background-image: url("../assets/other/home-tv-service-bg2.png");
+}
+
+.box-list li:nth-of-type(2) .box-list-content {
+  background-image: url("../assets/other/ic-stb-screens.png");
+  background-size: 40%;
+  background-position: 20% 15%;
+  background-repeat: no-repeat;
+
+  padding: 25vw 12vw 4vw 6vw;
+  position: relative;
+}
+
+.box-list li:nth-of-type(2) .box-list-content h3 {
+  color: #1e2024;
+}
+
+
+@media (max-width: 1245px) {
+
+  .box-list .box-list-content h3 {
+    width: 120%;
+  }
+  .box-list p {
+    width: 120%;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .box-list li {
+    width: 100%;
+  }
+
+  .box-list li:nth-of-type(1) .box-list-content {
+    background-position: 6vw 6vw;
+    padding: 50vw 3vw 8vw 6vw;
+  }
+
+  .box-list p{
+    padding: 2vw 0 1vw 0;
+
+  }
+  .box-list li:nth-of-type(1) .h3-small {
+    color: white;
+    width: 56%;
+  }
+
+  .box-list li:nth-of-type(2) .box-list-content {
+    background-size: 40%;
+    background-position: 8vw 8vw;
+    padding: 50vw 3vw 8vw 6vw;
+    width: 80%;
+  }
+
+  .box-list li:nth-of-type(2) {
+    width: 120%;
+  }
+
+  .box-list .box-list-content h3 {
+    width: 80%;
+  }
+
+  .box-list li:nth-of-type(1) .h3-small{
+    width: 60%;
+  }
+
+}

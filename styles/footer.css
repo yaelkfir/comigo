@@ -1,0 +1,250 @@
+.footer-nav-sub a:link,
+.footer-nav-sub a:visited,
+.footer-nav-terms-in a:link,
+.footer-nav-terms-in a:visited,
+.footer-span > a:link,
+.footer-span > a:visited {
+  color: #7a7a7a;
+}
+
+.footer-nav-sub a:hover,
+.footer-nav-sub a:focus,
+.footer-nav-sub a:active {
+  color: #f14848;
+}
+
+.footer-nav a,
+.footer-nav-terms-in a:hover,
+.footer-nav a:focus,
+.footer-nav-terms-in a:active{
+
+  color: #ffffff;
+
+}
+.site-footer {
+  background-color: #1e2024;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.site-footer > a {
+  position: absolute;
+  top: 22%;
+  right: 12%;
+}
+
+.footer-nav {
+  width: 50%;
+  margin-left: 12%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.footer-nav > li {
+  float: left;
+  width: 33.3333333%;
+  padding-bottom: 2rem;
+}
+
+.footer-nav > li > ul > li:first-child {
+  padding-bottom: 2rem;
+}
+
+.footer-nav > ul > li {
+  text-align: left;
+  padding: 0;
+}
+
+.footer-nav-sub li {
+  display: inline-block;
+  padding-bottom: 0;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+
+.footer-nav-terms {
+  background-color: #151515;
+  color: #7a7a7a;
+  font-weight: 300;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 12%;
+  font-size: 0.8rem;
+}
+
+div.footer-nav-terms ul {
+  padding: 2% 0;
+}
+
+div.footer-nav-terms ul:nth-of-type(1) {
+  float: left;
+  width: 65%;
+}
+
+div.footer-nav-terms ul:nth-of-type(2) {
+  float: right;
+  width: 15%;
+}
+
+div.footer-nav-terms ul:nth-of-type(2) li {
+  float: right;
+}
+
+.footer-nav-terms-in > li {
+  float: left;
+  padding-right: 1rem;
+}
+
+.footer-nav-terms span {
+  float: left;
+  width: 20%;
+  padding-top: 2%;
+}
+
+.footer-nav-terms-in:nth-of-type(2) > li:first-child {
+  padding-right: 0;
+}
+
+.footer-nav-terms-in:nth-child(1) li:before {
+  content: "|";
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.footer-nav-terms-in:nth-child(1) li:nth-child(1):before {
+  content: "";
+  display: inline-block;
+  margin-right: 0;
+}
+
+@media (max-width: 960px) {
+
+  div.footer-nav-terms ul:nth-of-type(1) {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  div.footer-nav-terms ul:nth-of-type(2) {
+    float: right;
+    width: 15%;
+    position: absolute;
+    top: -3px;
+    right: 12%;
+  }
+
+  .footer-nav-terms span {
+    width: 100%;
+    padding-bottom: 2%;
+  }
+
+  .fa-2x {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .site-footer {
+    background-color: #1e2024;
+    padding-top: 70px;
+    font-size: 1.5rem;
+    position: relative;
+    height: 190vw;
+  }
+
+  .footer-nav-sub li {
+    display: inline-block;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  .footer-nav > li {
+    float: none;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .footer-nav {
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  .footer-nav > li > ul > li:first-child {
+    padding-bottom: 3rem;
+  }
+
+  .site-footer > a {
+    position: absolute;
+    bottom: 90px;
+    width: 30%;
+    right: 35%;
+    top: initial;
+  }
+
+  .site-footer > a > img {
+    width: 100%;
+  }
+
+  .footer-nav-terms {
+    padding: 1.5rem 5rem;
+    height: 55vw;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  div.footer-nav-terms ul:nth-of-type(1) {
+    float: right;
+    width: 100%;
+    position: relative;
+    text-align: right;
+    line-height: 50px;
+  }
+
+  .footer-nav-terms-in > li {
+    float: none;
+    padding-right: 0;
+  }
+
+  div.footer-nav-terms ul:nth-of-type(1) > li:nth-of-type(1) {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+  }
+
+  div.footer-nav-terms ul:nth-of-type(1) > li:nth-of-type(4),
+  .footer-nav-terms-in:nth-child(1) li:before {
+    display: none;
+  }
+
+  div.footer-nav-terms ul:nth-of-type(2) {
+    width: 100%;
+    text-align: center;
+    top: 200px;
+    left: 0px;
+
+  }
+
+  div.footer-nav-terms ul:nth-of-type(2) > li {
+    float: none;
+    line-height: 50px;
+    width: 15%;
+    display: inline-block
+  }
+
+  div.footer-nav-terms ul:nth-of-type(2) > li:nth-of-type(5) {
+    width: 100%;
+    padding-top: 1vw;
+  }
+
+  .footer-nav-terms span {
+    width: 100%;
+    padding-top: 30%;
+    padding-bottom: 4%;
+    text-align: center;
+  }
+
+}

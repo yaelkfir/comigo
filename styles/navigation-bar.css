@@ -1,0 +1,260 @@
+@media (min-width: 751px) {
+
+  /*---- header -----*/
+
+  .site-header .logo-container {
+    line-height: 66px;
+  }
+
+  .site-header .logo {
+    vertical-align: middle;
+  }
+
+  .site-header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15;
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 0;
+  }
+
+
+  #menu-btn + label {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+  }
+
+  .hide-menu-transition {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    height: 100%;
+    background-color: white;
+  }
+
+  /*---- navigation -----*/
+
+  nav {
+    z-index: 10;
+    float: right;
+  }
+
+  nav .selected-link {
+    color: #f14848;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav .nav-link-container > a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  .top-menu,
+  .top-menu ul,
+  .top-menu li {
+    line-height: 66px;
+  }
+
+
+  .top-menu > ul > li {
+    margin: 0;
+    float: left
+  }
+
+  .top-menu > ul > li:hover {
+    color: #f14848;
+  }
+
+  .top-menu li:hover > .nav-second-level {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .top-menu .nav-second-level {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    background-color: rgba(255, 255, 255, 0.98);
+    transition: all 0.3s ease-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: -100;
+  }
+
+  .top-menu .nav-second-level li {
+    height: 150px;
+    width: 33.33333%;
+    float: left;
+  }
+
+  .top-menu .nav-second-level li a:hover {
+    background-color: #f14848;
+    color: #ffffff;
+  }
+
+  .top-menu .nav-second-level li ul {
+    position: absolute;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.98);
+    transition: all 0.3s ease-out;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .top-menu .nav-second-level li:hover > div ul {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .top-menu .nav-second-level li .hide-level-3-nav {
+    position: absolute;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    transform: translateY(-200%);
+  }
+
+  .top-menu .nav-second-level li:hover .hide-level-3-nav {
+    transform: translateY(0);
+  }
+
+  .top-menu .nav-second-level li ul li {
+    height: 150px;
+    width: 50%;
+    float: left;
+  }
+
+  .top-menu .nav-second-level li a div {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .top-menu .nav-second-level a {
+    width: 100%;
+    height: 150px;
+    color: #1e2024;
+    text-align: center;
+    line-height: 150px;
+    font-size: 2rem;
+    display: inline-block;
+  }
+
+  .nav-second-level a:hover,
+  a .nav-second-level:focus,
+  .nav-second-level a:active {
+    color: #ffffff;
+    background-color: #f14848;
+  }
+
+  .ul .nav-second-level a:link {
+    color: #151515;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 800px) {
+  .top-menu > ul > li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .site-header nav {
+    display: none;
+  }
+
+  #menu-btn[type=checkbox]:checked ~ nav {
+    display: block;
+  }
+
+  #menu-btn + label {
+    float: right;
+    line-height: 66px;
+  }
+
+  .site-header .logo-container {
+    line-height: 66px;
+  }
+
+  .site-header .logo {
+    vertical-align: middle;
+  }
+
+  .site-header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 0;
+  }
+  .top-menu {
+    line-height: 50px;
+    width: 100vw;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: calc(100vh - 66px);
+    overflow: auto;
+  }
+
+  .top-menu li {
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .top-menu ul ul {
+    padding-left: 30px;
+  }
+
+  .top-menu ul ul li a:hover {
+    color: #f14848;
+  }
+
+  .top-menu ul ul li::before {
+    content: "-";
+    font-size: 2rem;
+    font-weight: 200;
+    position: absolute;
+    margin-left: -20px;
+    top: -3px;
+    left: 20px;
+    color: #151515;
+  }
+  .top-menu .nav-second-level{
+    background-color: white;
+  }
+
+
+}

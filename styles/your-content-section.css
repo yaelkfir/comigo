@@ -1,0 +1,64 @@
+.your-content {
+  min-height: 480px;
+  padding: 4vw 0;
+  position: relative;
+}
+
+.your-content p {
+  width: 100%;
+  min-width: 200px;
+}
+
+.your-content img {
+  float: right;
+  width: 55%;
+  min-height: 100%;
+}
+
+.your-content div {
+  width: 45%;
+  text-align: left;
+  padding-right: 14vw;
+  padding-left: 12vw;
+  padding-top: 2vw;
+  display: inline-block;
+  float: left;
+  min-width: 190px;
+}
+
+@media (max-width: 750px) {
+
+  .your-content{
+    min-height: 800px;
+    padding: 6vw 6vw;
+    position: relative;
+  }
+  .your-content img {
+    float: right;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 8vw;
+    right: 0;
+    padding: 0 14vw;
+    min-height: initial;
+  }
+
+  .your-content div {
+    width: 100%;
+    position: absolute;
+    bottom: 4vw;
+    left: 6vw;
+    text-align: left;
+    padding: 0;
+  }
+
+  .your-content div {
+    width: 80%;
+    position: absolute;
+    bottom: 4vw;
+    left: 8vw;
+    text-align: left;
+    padding: 0;
+  }
+}

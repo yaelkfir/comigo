@@ -1,0 +1,24 @@
+.why-comigo {
+  padding: 6vw;
+}
+
+.why-comigo-content {
+  width: 290px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+
+  .why-comigo {
+    float: none;
+    display: block;
+    padding: 10vw;
+
+  }
+
+  .why-comigo-content {
+    width: 350px;
+  }
+}

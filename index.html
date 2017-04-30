@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <title>Comigo OTT/STB solutions</title>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+
   <link rel="stylesheet" href="styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Bungee+Shade|Source+Sans+Pro:200,300,400,700,900"
+  <link rel="stylesheet" href="styles/navigation-bar.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/why-comoigo.css">
+  <link rel="stylesheet" href="styles/img-list.css">
+  <link rel="stylesheet" href="styles/box-list.css">
+  <link rel="stylesheet" href="styles/your-content-section.css">
+  <link rel="stylesheet" href="styles/floating-boxes.css">
+  <link rel="stylesheet" href="styles/blog-list.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900"
         rel="stylesheet">
   <link rel="stylesheet" href="styles/css/font-awesome.min.css">
   <meta name="viewport"
@@ -13,15 +24,15 @@
 </head>
 <body id="index">
 <header class="site-header clearfix">
-  <a href="#" class="a-logo"><img src="assets/img/comigo-logo.png" alt="comigo logo" class="logo"></a>
-  <input type="checkbox" name="checkbox-menu" id="checkbox-menu" value="value">
-  <label for="checkbox-menu">menu</label>
+  <a href="#" class="logo-container"><img src="assets/img/comigo-logo.png" alt="comigo logo" class="logo"></a>
+  <input type="checkbox" name="menu-btn" id="menu-btn" value="value">
+  <label for="menu-btn">menu</label>
   <div class="hide-menu-transition"></div>
   <nav class="top-menu clearfix">
     <ul>
-      <li><a href="#" class="index_link">Home</a></li>
-      <li class="nav-link"><a href="#">Our Solutions</a>
-        <ul class="red-back-link clearfix">
+      <li><a href="#" class="selected-link">Home</a></li>
+      <li class="nav-link-container"><a href="#">Our Solutions</a>
+        <ul class="nav-second-level clearfix">
           <li>
             <a href="#">
               <div>ei cloud</div>
@@ -62,9 +73,9 @@
           </a></li>
         </ul>
       </li>
-      <li class="nav-link"><a href="#">Partners</a></li>
-      <li class="nav-link"><a href="#">Industry Insights</a>
-        <ul class="red-back-link">
+      <li class="nav-link-container"><a href="#">Partners</a></li>
+      <li class="nav-link-container"><a href="#">Industry Insights</a>
+        <ul class="nav-second-level">
           <li><a href="#">
             <div>media room</div>
           </a></li>
@@ -76,15 +87,15 @@
           </a></li>
         </ul>
       </li>
-      <li class="nav-link"><a href="#">About</a></li>
-      <li class="nav-link"><a href="#">Contact</a></li>
+      <li class="nav-link-container"><a href="#">About</a></li>
+      <li class="nav-link-container"><a href="#">Contact</a></li>
     </ul>
   </nav>
 </header>
 <main>
   <!-- Experience Intelligence -->
-  <section class="h1-section">
-    <div class="h1-section-content">
+  <section class="hero-section">
+    <div class="hero-section-content">
       <h2>Comigo OTT/STB solutions - redefine TV experience</h2>
       <h1>Experience Intelligence</h1>
       <a href="#" class="red-btn-link">OUR SOLUTIONS</a>
@@ -203,7 +214,7 @@
   </ul>
   <!-- YOUR CONTENT-->
   <section class="your-content clearfix">
-    <div class="img-list-static-content">
+    <div>
       <h3 class="txt-left-align">YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE</h3>
       <p class="p-margin">
         Intelligence-based contextual WatchApp™ Applications.

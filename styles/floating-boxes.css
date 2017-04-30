@@ -1,0 +1,353 @@
+.floating-boxes {
+  background-color: #f9f9f9;
+  height: 42vw;
+  /* display: block; */
+  width: 100%;
+  position: relative;
+}
+
+.floating-boxes h3 {
+  color: #1e2024;
+  font-size: 3.3rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.float-boxes-left {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.floating-boxes .gray-back-link {
+  color: #151515;
+  height: 555px;
+}
+
+.floating-boxes .site-footer {
+  background-color: #1e2024;
+  padding-top: 3rem;
+}
+
+.schedule-box {
+  float: right;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: #efefef;
+  transition: all 0.2s ease-out;
+}
+
+.dark-gray-box:hover,
+.schedule-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.schedule-box img {
+  width: 95%;
+  background-color: #efefef;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.schedule-box h3 {
+  width: 60%;
+  padding: 20px 30px;
+  line-height: 3.3rem;
+}
+
+a.red-box {
+  width: 40%;
+  height: 50%;
+  float: left;
+  position: relative;
+  background-color: #f14848;
+}
+
+a.red-box::after {
+  content: "";
+  background: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 2</title><path class="cls-1" d="M69,0a69,69,0,1,0,69,69A69,69,0,0,0,69,0Zm0,135a66,66,0,1,1,66-66A66.12,66.12,0,0,1,69,135Z"/><path class="cls-1" d="M80.11,87.26H57.89a1.5,1.5,0,0,0,0,3H80.11a1.5,1.5,0,0,0,0-3Z"/><path class="cls-1" d="M66.84,84.59a1.5,1.5,0,0,0,1.09.55H68a1.5,1.5,0,0,0,1.07-.45L81.18,72.38A1.5,1.5,0,0,0,79,70.28l-9.39,9.54V48.5a1.5,1.5,0,0,0-3,0V79.63l-7.59-9.25a1.5,1.5,0,1,0-2.32,1.9Z"/></svg>') no-repeat;
+
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  top: 20%;
+  left: 30%;
+}
+
+a.red-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 0px solid transparent;
+  border-right: 50px solid #ffffff;
+  border-bottom: 50px solid #e48383;
+  transition: all .1s ease;
+}
+
+a.red-box:hover::before{
+  border-right: 70px solid #ffffff;
+  border-bottom: 70px solid #e48383;
+}
+
+.red-box p {
+  color: #e8e8e8;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.light-gray {
+  width: 60%;
+  background-color: #f9f9f9;
+  height: 50%;
+  float: left;
+  position: relative;
+}
+
+.light-gray h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+.gray-box {
+  background-color: #efefef;
+  width: 40%;
+  height: 50%;
+  float: left;
+  padding-left: 4.8vw;
+  padding-top: 4vw;
+}
+
+.gray-box li {
+  background-color: #f14848;
+  height: 6vw;
+  width: 6vw;
+  border-radius: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  transition: transform, box-shedow 2s ease-out;
+}
+
+.gray-box li:hover {
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.gray-box li a {
+  color: white;
+}
+
+.dark-gray-box {
+  background-color: #e8e8e8;
+  width: 60%;
+  height: 50%;
+  float: left;
+  position: relative;
+  transition: all 0.2s ease-out;
+}
+
+.dark-gray-box img {
+  position: absolute;
+  height: 60%;
+  width: 80%;
+  bottom: 10%;
+  right: 0;
+}
+
+.dark-gray-box p {
+  position: absolute;
+  width: 49%;
+  text-transform: uppercase;
+  height: 100%;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5rem;
+  color: #1e2024;
+}
+
+@media (max-width: 1100px) {
+  .floating-boxes h3 {
+    line-height: 3rem;
+    font-size: 2.3rem;
+  }
+
+  .floating-boxes h3 {
+    line-height: 2.6rem;
+  }
+
+  .dark-gray-box img {
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    bottom: 10%;
+    right: 0;
+  }
+
+  .dark-gray-box p {
+    width: 70%;
+  }
+
+  a.red-box::after{
+    height: 30%;
+    top: 15%;
+    left: 35%;
+  }
+  a.red-box::before {
+    border-right: 40px solid #ffffff;
+    border-bottom: 40px solid #e48383;
+    transition: all .1s ease;
+  }
+
+  a.red-box:hover::before{
+    border-right: 60px solid #ffffff;
+    border-bottom: 60px solid #e48383;
+  }
+}
+
+@media (max-width: 900px) {
+
+  a.red-box::after{
+    height: 20%;
+    top: 15%;
+    left: 40%;
+  }
+  a.red-box::before {
+
+    border-right: 30px solid #ffffff;
+    border-bottom: 30px solid #e48383;
+    transition: all .1s ease;
+  }
+
+  a.red-box:hover::before{
+    border-right: 50px solid #ffffff;
+    border-bottom: 50px solid #e48383;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .floating-boxes {
+    height: 300vw;
+  }
+
+  .float-boxes-left {
+    width: 100%;
+    position: static;
+  }
+
+  .floating-boxes h3 {
+    line-height: 3rem;
+    font-size: 3rem;
+    width: 530px;
+  }
+
+  .light-gray {
+    width: 100%;
+    height: 25vw;
+    top: 0;
+    left: 0
+  }
+
+  .dark-gray-box,
+  .gray-box,
+  a.red-box {
+    width: 100%;
+    height: 60vw;
+    float: none;
+    position: absolute;
+  }
+
+  a.red-box {
+    top: 25vw;
+    left: 0;
+    right: 0;
+  }
+
+  a.red-box::after{
+    height: 50%;
+    width: 100%;
+    top: 21%;
+    left: 35%;
+  }
+
+  a.red-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 0px solid transparent;
+    border-right: 70px solid #ffffff;
+    border-bottom: 70px solid #e48383;
+    transition: all .1s ease;
+  }
+
+  a.red-box:hover::before{
+    border-right: 90px solid #ffffff;
+    border-bottom: 90px solid #e48383;
+  }
+
+  .gray-box {
+    top: 185vw;
+  }
+
+  .dark-gray-box {
+    bottom: 0;
+    left: 0;
+  }
+
+  .schedule-box {
+    width: 100%;
+    float: none;
+    position: absolute;
+    top: 85vw;
+    height: 100vw;
+  }
+
+  .schedule-box img {
+    width: 95%;
+  }
+
+  .gray-box {
+    top: 185vw;
+    margin: auto;
+    padding-left: 35%;
+    padding-top: 13%;
+    padding-right: 30%;
+
+  }
+
+  .gray-box li {
+    background-color: #f14848;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 15px;
+    transition: transform, box-shedow 2s ease-out;
+    margin-bottom: 15px;
+  }
+
+  .gray-box li a {
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+  }
+
+
+}

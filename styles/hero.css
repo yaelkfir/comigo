@@ -1,0 +1,43 @@
+
+.hero-section {
+  background-image: url("../assets/other/homepage-featured-new-1920x745.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-section-content {
+  padding: 8vw 0;
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+
+  .hero-section {
+    background-position-x: 50%;
+  }
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    padding: 4vw 4vw;
+    margin: auto;
+  }
+
+
+  .hero-section h2 {
+    font-size: 1.7rem;
+    padding: 0 20vw;
+    margin: auto;
+  }
+
+
+  .hero-section-content {
+    padding: 8vw 0;
+    margin: auto;
+    width: 100%;
+  }
+}
