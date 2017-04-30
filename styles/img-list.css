@@ -73,7 +73,9 @@ figcaption {
 }
 
 .img-list ul li a:hover,
-.img-list ul li a:focus {
+.img-list ul li a:focus,
+.img-list ul li:hover a,
+.img-list ul li:focus a {
   color: #f14848;
 }
 
