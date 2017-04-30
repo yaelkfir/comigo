@@ -151,7 +151,7 @@ figcaption {
     }
 
     .img-list h3 {
-      width: 420px;
+      width: 300px;
     }
 
     .img-list .footer-nav-sub {
@@ -169,7 +169,7 @@ figcaption {
     .img-list .footer-nav-sub li figure {
       width: 80%;
       position: absolute;
-      top: 35rem;
+      top: 115vw;
       left: 12vw;
       right: 6vw;
       padding: 0;
@@ -191,8 +191,8 @@ figcaption {
       font-size: 1.3rem;
       width: 90%;
       line-height: 1.6rem;
-
     }
+
 
     .img-list ul li img {
       left: 10vw;

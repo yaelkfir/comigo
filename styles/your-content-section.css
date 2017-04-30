@@ -29,7 +29,7 @@
 @media (max-width: 750px) {
 
   .your-content{
-    min-height: 800px;
+    min-height: 820px;
     padding: 6vw 6vw;
     position: relative;
   }
@@ -47,7 +47,7 @@
   .your-content div {
     width: 100%;
     position: absolute;
-    bottom: 4vw;
+    bottom: 2vw;
     left: 6vw;
     text-align: left;
     padding: 0;
