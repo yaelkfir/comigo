@@ -45,19 +45,10 @@
   }
 
   .your-content div {
-    width: 100%;
-    position: absolute;
-    bottom: 2vw;
-    left: 6vw;
-    text-align: left;
-    padding: 0;
-  }
-
-  .your-content div {
     width: 80%;
     position: absolute;
     bottom: 4vw;
-    left: 8vw;
+    left: 6vw;
     text-align: left;
     padding: 0;
   }
